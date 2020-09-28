@@ -1,0 +1,33 @@
+/* header */
+/* header-top */
+.body {
+  height: 6000px;
+}
+.header-top {
+  height: 100px;
+  background-color: #2c3e50;
+}
+.header-bottom {
+  height: 500px;
+  background-color: #1abc9c
+}
+
+/* main */
+.testo {
+  height: 150px;
+  background-color: #fff;
+}
+.row-immagini {
+  height: 196px;
+  width: 100px;
+  margin: 20px 0;
+  background-color: red;
+}
+
+@media screen and (min-width: 992px) {
+  .row-immagini {
+    height: 196px;
+    width: 220px;
+    background-color: red;
+  }
+}
