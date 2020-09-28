@@ -13,6 +13,7 @@
 }
 
 /* main */
+/* prima section */
 .testo {
   height: 150px;
   background-color: #fff;
@@ -23,6 +24,25 @@
   margin: 20px 0;
   background-color: red;
 }
+/* seconda section */
+.seconda {
+  height: 500px;
+  background-color: #1abc9c
+}
+/* terza section */
+.terza {
+  height: 600px;
+}
+.footer-top {
+  height: 300px;
+  background-color: #396e94;
+}
+.footer-bottom {
+  height: 120px;
+  background-color: #1a252f;
+}
+
+
 
 @media screen and (min-width: 992px) {
   .row-immagini {
