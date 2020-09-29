@@ -44,7 +44,7 @@ h3 {
   display: block;
   margin: 30px auto 15px auto;
 }
-.header-bottom i::before {
+.header-bottom .stella::before {
   content: '';
   display: inline-block;
   width: 70px;
@@ -52,7 +52,7 @@ h3 {
   background-color: #fff;
   margin-right: 25px;
 }
-.header-bottom i::after {
+.header-bottom .stella::after {
   content: '';
   display: inline-block;
   width: 70px;
@@ -60,25 +60,174 @@ h3 {
   background-color: #fff;
   margin-left: 25px;
 }
+.header-bottom .stella i {
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+  top: 5px;
+}
 
 
 
 /* main */
 /* prima section */
-.testo {
-  height: 150px;
-  background-color: #fff;
+/* testo */
+.prima h2 {
+  color: #2c3e50;
 }
+.prima .stella::before {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #2c3e50;
+  margin-right: 25px;
+}
+.prima .stella::after {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #2c3e50;
+  margin-left: 25px;
+}
+.prima .stella {
+  font-size: 30px;
+  color: #2c3e50;
+  position: relative;
+  top: 5px
+}
+/* immagini */
 .row-immagini {
   height: 196px;
-  /* width: 100px; */
-  margin: 20px 0;
-  background-color: red;
+  width: 250px;
+  margin: 20px auto;
+}
+#cabin {
+  background-image: url(../img/cabin.png);
+  background-size: cover;
+  background-position: center;
+}
+#cabin i {
+  display: none;
+}
+ #cabin:hover {
+  /* background-image: none; */
+  opacity: 0.5;
+  background-color: #1abc9c;
+}
+#cabin i: {
+  color: #fff;
+}
+#cake {
+  background-image: url(../img/cake.png);
+  background-size: cover;
+  background-position: center;
+}
+#cake i {
+  display: none;
+}
+#cake:hover {
+  background-image: none;
+  background-color: #1abc9c;
+}
+
+}
+#circus {
+  background-image: url(../img/circus.png);
+  background-size: cover;
+  background-position: center;
+}
+#circus i {
+  display: none;
+}
+#circus:hover {
+  background-image: none;
+  background-color: #1abc9c;
+}
+#game {
+  background-image: url(../img/game.png);
+  background-size: cover;
+  background-position: center;
+}
+#game i {
+  display: none;
+}
+#game:hover {
+  background-image: none;
+  background-color: #1abc9c;
+}
+#safe {
+  background-image: url(../img/safe.png);
+  background-size: cover;
+  background-position: center;
+}
+#safe i {
+  display: none;
+}
+#safe:hover {
+  background-image: none;
+  background-color: #1abc9c;
+}
+#submarine {
+  background-image: url(../img/submarine.png);
+  background-size: cover;
+  background-position: center;
+}
+#submarine i {
+  display: none;
+}
+#submarine:hover {
+  background-image: none;
+  background-color: #1abc9c;
 }
 /* seconda section */
 .seconda {
   height: 500px;
+  line-height: 40px;
   background-color: #1abc9c
+}
+.seconda .stella::before {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+  margin-right: 25px;
+}
+.seconda .stella::after {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+  margin-left: 25px;
+}
+.seconda .stella {
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+  top: 5px
+}
+.seconda p {
+  margin-top: 30px;
+  color: #fff;
+}
+.seconda button {
+  position: relative;
+  left: 40%;
+  padding: 16px 16px;
+  background-color: #1abc9c;
+  border-color: #fff;
+}
+.seconda button i {
+  margin-right: 8px;
+}
+.btn-primary:hover{
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
 }
 /* terza section */
 .terza {
