@@ -9,6 +9,12 @@ h2 {
   text-transform: uppercase;
   color: #fff;
 }
+h3 {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
 
 /* header */
 .navbar-default {
@@ -33,6 +39,29 @@ h2 {
   height: 500px;
   background-color: #1abc9c
 }
+.header-bottom img {
+  width: 200px;
+  display: block;
+  margin: 30px auto 15px auto;
+}
+.header-bottom i::before {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+  margin-right: 25px;
+}
+.header-bottom i::after {
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+  margin-left: 25px;
+}
+
+
 
 /* main */
 /* prima section */
