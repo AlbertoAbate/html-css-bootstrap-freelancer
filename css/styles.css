@@ -1,5 +1,5 @@
-.body {
-  height: 6000px;
+body {
+  padding-top: 70px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,16 +20,21 @@ h3 {
 .navbar-default {
   background-color: #2c3e50;
   margin: 0;
+  border: 0;
 }
-.main-header h2 {
+.main-header .navbar-brand {
   height: 80px;
   line-height: 80px;
   padding: 0 15px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
 }
 .main-header .navbar-nav > li > a {
-  line-height: 120px;
+  line-height: 80px;
   padding: 0 15px;
   color: #fff;
+  transition: color .4s;
 }
 .main-header .navbar-nav > li > a:hover {
   color: #1abc9c;
@@ -63,8 +68,7 @@ h3 {
 .header-bottom .stella i {
   font-size: 30px;
   color: #fff;
-  position: relative;
-  top: 5px;
+  vertical-align: middle;
 }
 
 
@@ -94,29 +98,39 @@ h3 {
 .prima .stella {
   font-size: 30px;
   color: #2c3e50;
-  position: relative;
-  top: 5px
+  vertical-align: middle;
 }
 /* immagini */
 .row-immagini {
   height: 196px;
   width: 250px;
   margin: 20px auto;
+  cursor: pointer;
+  position: relative;
 }
 #cabin {
   background-image: url(../img/cabin.png);
   background-size: cover;
   background-position: center;
 }
-#cabin i {
+.layover i {
   display: none;
 }
- #cabin:hover {
-  /* background-image: none; */
-  opacity: 0.5;
-  background-color: #1abc9c;
+.row-immagini:hover .layover {
+ width: 100%;
+ height: 100%;
+ background-color: rgba(26, 188, 156, 0.9);
+ position: absolute;
+ top: 0;
+ left: 0;
 }
-#cabin i: {
+.row-immagini:hover .layover i {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 50px;
   color: #fff;
 }
 #cake {
@@ -124,66 +138,30 @@ h3 {
   background-size: cover;
   background-position: center;
 }
-#cake i {
-  display: none;
-}
-#cake:hover {
-  background-image: none;
-  background-color: #1abc9c;
-}
 
-}
 #circus {
   background-image: url(../img/circus.png);
   background-size: cover;
   background-position: center;
-}
-#circus i {
-  display: none;
-}
-#circus:hover {
-  background-image: none;
-  background-color: #1abc9c;
 }
 #game {
   background-image: url(../img/game.png);
   background-size: cover;
   background-position: center;
 }
-#game i {
-  display: none;
-}
-#game:hover {
-  background-image: none;
-  background-color: #1abc9c;
-}
 #safe {
   background-image: url(../img/safe.png);
   background-size: cover;
   background-position: center;
-}
-#safe i {
-  display: none;
-}
-#safe:hover {
-  background-image: none;
-  background-color: #1abc9c;
 }
 #submarine {
   background-image: url(../img/submarine.png);
   background-size: cover;
   background-position: center;
 }
-#submarine i {
-  display: none;
-}
-#submarine:hover {
-  background-image: none;
-  background-color: #1abc9c;
-}
 /* seconda section */
 .seconda {
-  height: 500px;
+  /* height: 500px; */
   line-height: 40px;
   background-color: #1abc9c
 }
@@ -206,8 +184,7 @@ h3 {
 .seconda .stella {
   font-size: 30px;
   color: #fff;
-  position: relative;
-  top: 5px
+  vertical-align: middle;
 }
 .seconda h2 {
   font-size: 40px;
@@ -222,6 +199,7 @@ h3 {
   padding: 16px 16px;
   background-color: #1abc9c;
   border-color: #fff;
+  margin-bottom: 10px;
 }
 .seconda button i {
   margin-right: 8px;
@@ -255,22 +233,83 @@ h3 {
 .terza .stella {
   font-size: 30px;
   color: #2c3e50;
-  position: relative;
-  top: 5px
+  vertical-align: middle;
+  /* margin-bottom: 60px; */
 }
 .terza h2 {
   font-size: 50px;
   color: #2c3e50;
 }
-.footer-top {
-  height: 300px;
-  background-color: #396e94;
+.form-group input,
+.form-group textarea {
+  border: 0;
+  border-bottom: 1px solid #6c757d;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 24px;
 }
-.footer-bottom {
-  height: 120px;
-  background-color: #1a252f;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: none;
+  color: #6c757d;
 }
 
+.form-group label {
+  margin-bottom: 40px;
+  color: #6c757d;
+}
+.message {
+  display: block;
+}
+form .btn-primary {
+  background-color: #1abc9c;
+  padding: 15px 23px;
+  border-radius: 5px;
+}
+form .btn-primary:hover {
+  background-color: #159a80;
+}
+.form-group textarea {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  height: 300px;
+}
+/* footer */
+.footer-primo {
+  padding: 70px 0;
+  background-color: #2c3e50;
+}
+footer h3 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+footer p {
+  color: #fff;
+  font-size: 16px;
+}
+footer .social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 50%;
+}
+.footer-top p a {
+  color: #1abc9c;
+}
+.footer-top p a:hover {
+  color: #117964;
+}
+/* footer-bottom */
+.footer-bottom {
+  padding: 30px;
+  background-color: #1a252f;
+  font-size: 12px;
+}
 
 
 @media screen and (min-width: 992px) {
